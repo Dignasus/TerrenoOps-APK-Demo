@@ -7,11 +7,17 @@ Proyecto académico desarrollado para la Dirección de Seguridad Pública de la 
 
 ## Descargar la aplicación
 
-La APK de demostración estará disponible en la sección **Releases** de este repositorio.
+**Versión disponible:** [TerrenoOps — Demo v0.1.0](https://github.com/Dignasus/TerrenoOps-APK-Demo/releases/tag/v0.1.0-demo).
+
+**[Descargar APK para Android](https://github.com/Dignasus/TerrenoOps-APK-Demo/releases/download/v0.1.0-demo/app-demo.apk)**
+
+Archivo: `app-demo.apk` · Requiere Android 7.0 o superior.
+
+**SHA-256:** `a5b8a441576fe8f8a7d97a8778a779c5cf6a659ebae256f37190f6209b1d648b`
 
 ## Instalación
 
-1. Descargar el archivo APK desde Releases.
+1. Descargar `app-demo.apk` desde el enlace anterior o desde **Releases**.
 2. Abrir el archivo en un dispositivo Android compatible.
 3. Autorizar la instalación desde esa fuente cuando Android lo solicite.
 4. Instalar e iniciar TerrenoOps.
