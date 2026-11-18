@@ -1,54 +1,44 @@
+# TerrenoOps — Descarga pública de APK
 
-# TerrenoOps — APK de Demostración
+Aplicación Android nativa (Kotlin y Jetpack Compose) desarrollada por Cristian Millaqueo y Matías Carrasco para el Proyecto Integrado INACAP 2026, caso académico de la Dirección de Seguridad Pública de San Pedro de la Paz.
 
-Aplicación Android nativa desarrollada en Kotlin y Jetpack Compose como parte del Proyecto Integrado de INACAP.
+## Versión actual para exposición: V2.0.2
 
-Proyecto académico desarrollado para la Dirección de Seguridad Pública de la Municipalidad de San Pedro de la Paz.
+**[Abrir release TerrenoOps V2.0.2](https://github.com/Dignasus/TerrenoOps-APK-Demo/releases/tag/v2.0.2)**
 
-## Descargar la aplicación
+**[Descargar APK V2.0.2](https://github.com/Dignasus/TerrenoOps-APK-Demo/releases/download/v2.0.2/TerrenoOps-v2.0.2.apk)**
 
-**Versión disponible:** [TerrenoOps — Demo v0.1.0](https://github.com/Dignasus/TerrenoOps-APK-Demo/releases/tag/v0.1.0-demo).
+Archivo: `TerrenoOps-v2.0.2.apk`. Release pública de presentación, marcada como prerelease. Requiere un dispositivo Android compatible; en la evaluación se ejecutó en Motorola Edge 50 Fusion. La prueba de instalación anónima desde otro dispositivo debe verificarse antes de la presentación.
 
-**[Descargar APK para Android](https://github.com/Dignasus/TerrenoOps-APK-Demo/releases/download/v0.1.0-demo/app-demo.apk)**
+### Funcionalidades de V2
 
-Archivo: `app-demo.apk` · Requiere Android 7.0 o superior.
+- Acceso mediante credenciales de prueba de **Operador** y **Consulta** con Supabase académico.
+- Lista, búsqueda y filtros de tickets; Consulta en modo solo lectura.
+- Creación de tickets con códigos del sandbox, estados y cierre con descripción y evidencia fotográfica.
+- Persistencia remota según confirmaciones mostradas por la app.
+- Caché local Room y acceso de consulta con PIN offline previamente configurado.
 
-**SHA-256:** `a5b8a441576fe8f8a7d97a8778a779c5cf6a659ebae256f37190f6209b1d648b`
+**Acceso:** V2.0.2 requiere cuentas de prueba Supabase entregadas por el equipo al docente mediante canal privado. No colocar contraseñas, tokens ni credenciales sensibles en este repositorio público.
 
-## Instalación
+**Límites:** entorno académico con datos ficticios; no es despliegue municipal de producción. La validación de permisos HTTP/RLS contra el backend debe documentarse por separado de la restricción de botones.
 
-1. Descargar `app-demo.apk` desde el enlace anterior o desde **Releases**.
-2. Abrir el archivo en un dispositivo Android compatible.
-3. Autorizar la instalación desde esa fuente cuando Android lo solicite.
-4. Instalar e iniciar TerrenoOps.
+### Código y pruebas
 
-## Acceso de demostración
+- [Repositorio institucional privado](https://github.com/inacap-proyecto-integrado-2026-2/TerrenoOps-GrupoA) (requiere acceso autorizado).
+- [Rama con código de integración Supabase/offline](https://github.com/inacap-proyecto-integrado-2026-2/TerrenoOps-GrupoA/tree/feature/evidencias-offline).
+- [Plan de 15 casos de prueba](https://github.com/inacap-proyecto-integrado-2026-2/TerrenoOps-GrupoA/blob/master/docs/plan-pruebas.md).
+- [Índice de las 20 capturas](https://github.com/inacap-proyecto-integrado-2026-2/TerrenoOps-GrupoA/blob/master/docs/evidencias-v2.0.2.md). Las imágenes están pendientes de incorporarse al repositorio.
+- **Trazabilidad pendiente:** registrar el SHA-256 de V2.0.2 y el commit exacto desde el cual se construyó el APK. No se presume correspondencia exacta solo por el número de versión.
 
-La aplicación incluye dos perfiles locales:
+## Versión anterior conservada
 
-- **Demo Consulta:** visualización y búsqueda de tickets.
-- **Demo Operador:** demostración de creación, procesamiento y cierre de tickets.
+La [Demo V1 v0.1.0](https://github.com/Dignasus/TerrenoOps-APK-Demo/releases/tag/v0.1.0-demo) sigue disponible como versión histórica, con perfiles locales «Demo Consulta» y «Demo Operador» sin autenticación real. **No es la versión recomendada para la evaluación final.**
 
-No requiere credenciales municipales reales para utilizar los perfiles de demostración.
+## Instalación en Android
 
-## Funcionalidades
+1. Descargar la APK desde el enlace de V2.0.2.
+2. Abrir el archivo APK en el dispositivo Android.
+3. Autorizar la instalación desde esta fuente cuando el sistema lo solicite.
+4. Iniciar TerrenoOps y utilizar las credenciales de sandbox entregadas privadamente.
 
-- Consulta y búsqueda de tickets de prueba.
-- Gestión de estados.
-- Captura de fotografías con timestamp.
-- Dictado por voz.
-- Protección local de tickets cerrados.
-- Validaciones de formularios.
-- Demostración de permisos por perfil.
-
-## Aviso
-
-Esta versión es exclusivamente académica y de demostración. Utiliza datos simulados y no está conectada a la plataforma municipal de producción.
-
-La autenticación real y los controles de autorización del servidor están pendientes de validación en el sandbox municipal.
-
-## Equipo de desarrollo
-
-Cristian Millaqueo y Matías Carrasco.
-
-INACAP — Proyecto Integrado 2026.
+Proyecto académico. Ningún dato se envía a la municipalidad de producción.
